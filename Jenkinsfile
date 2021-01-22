@@ -24,8 +24,7 @@ pipeline {
                 }
             }
         }
-        }
-        stage('Building Image') {
+        stage("Building Image") {
             steps{
               script {
                   sh "export version=$env.VERSION"
@@ -34,5 +33,6 @@ pipeline {
               }
 	   }
         }
+    }
 }
 
